@@ -4,9 +4,12 @@ const fs = require("fs");
 const rawdata = fs.readFileSync("explorers.json");
 const explorers = JSON.parse(rawdata);
 
+console.log("I´m here")
+//console.log(explorers) // This is a explorer´s list 
+
 // Part 2: Get the quantity of explorers names in node
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
-//console.log(explorersInNode.length)
+console.log(explorersInNode.length) // The numbers of explorers filter by node property
 
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
