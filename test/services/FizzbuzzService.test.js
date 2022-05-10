@@ -19,7 +19,7 @@ describe("Test for static method Apply Validation ", () => {
     test('Case 4, explorer15', () => {
         const explorer15 = {name: "Explorer15", score: 15}
         const explorerValid = FizzbuzzService.applyValidationInExplorer(explorer15);
-        expect(explorerValid).toStrictEqual({name: "Explorer15", score: 15, trick: "FIZZBUZZ"});
+        expect(explorerValid).toStrictEqual({name: "Explorer15", score: 17, trick: "FIZZBUZZ"});
         });
     
   })
