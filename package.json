@@ -6,7 +6,8 @@
     "test": "node ./node_modules/jest/bin/jest.js",
     "linter": "node ./node_modules/eslint/bin/eslint.js",
     "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
-    "server": "node server.js"
+    "server": "node ./lib/server.js"
+    
   },
   "keywords": [],
   "author": "",
@@ -29,5 +30,8 @@
     "url": "https://github.com/Angel-Illescas/Refactoring_fizzbuzz/issues"
   },
   "homepage": "https://github.com/Angel-Illescas/Refactoring_fizzbuzz#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
